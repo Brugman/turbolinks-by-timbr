@@ -13,17 +13,17 @@ Before you install this plugin please read up on what Turbolinks is, and what it
 
 Configuration is optional. The plugin will work out of the box.
 
-### Disable Turbolinks on certain links
+### Partially disable Turbolinks
 
 You can customize the Turbolinks behavior in `turbolinks-settings.js`. By default, every link is a Turbolink, except for the toolbar (`#wpadminbar`) and anchor links (`#foo`).
 
-To disable Turbolinks for a certain link, or a wrapper for certain links, you can use `set_turbolinks_status( '.no-turbo', false );`.
+To disable Turbolinks for a link or a wrapper, you can use `set_turbolinks_status( '.no-turbo', false );`.
 
 The first parameter is the selector. It can be a class (`.no-turbo`), an id (`#menu-all-pages`), or a selector (`nav`).
 
 The second parameter turns Turbolinks off with `false`.
 
-### Re-enable Turbolinks on certain links
+### Partially re-enable Turbolinks
 
 If you get yourself in a situation where you want to re-enable Turbolinks for a link inside a disabled zone, you can use the same function with `true` for the second parameter.
 
@@ -54,3 +54,7 @@ You can override these with your own CSS in your theme or a custom plugin.
 ## Contributing
 
 Found a bug? Anything you'd like to ask, add, change, or have added or changed? Please open an issue so we can talk about it.
+
+## License
+
+[MIT](/LICENSE) &copy; [Tim Brugman](https://timbr.dev/)

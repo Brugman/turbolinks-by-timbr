@@ -13,10 +13,10 @@
 register_activation_hook( __FILE__, function () {
 
     $settings_default = plugin_dir_path( __FILE__ ).'assets/turbolinks-settings.default.js';
-    $settings_custom  = plugin_dir_path( __FILE__ ).'assets/turbolinks-settings.js';
+    $settings         = plugin_dir_path( __FILE__ ).'assets/turbolinks-settings.js';
 
     if ( !file_exists( $settings_custom ) )
-        copy( $settings_default, $settings_file_path );
+        copy( $settings_default, $settings );
 });
 
 add_action( 'wp_enqueue_scripts', function () {

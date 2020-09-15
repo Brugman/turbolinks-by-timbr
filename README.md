@@ -1,13 +1,32 @@
 # Turbolinks by timbr
 
-Speed up your WordPress website with [Turbolinks](https://github.com/turbolinks/turbolinks).
+> A WordPress plugin that speeds up your site with [Turbolinks](https://github.com/turbolinks/turbolinks).
 
-Before you install this plugin please read up on what Turbolinks is, and what it requires from you. Slapping Turbolinks on an already existing production site is a very bad idea.
+Before you install this plugin please read up on what Turbolinks is, and what it requires from you. Slapping Turbolinks on a production site is a bad idea!
 
 ## Installation
 
-1. Copy the plugin to the `plugins` folder.
-1. Activate the plugin.
+1. Download the ZIP.
+1. Extract the folder to `/wp-content/plugins/`.
+
+or
+
+```sh
+cd /wp-content/plugins/
+git clone https://github.com/Brugman/turbolinks-by-timbr.git
+```
+
+## Update
+
+1. Download the new ZIP.
+1. Replace the old folder in `/wp-content/plugins/`.
+
+or
+
+```sh
+cd /wp-content/plugins/turbolinks-by-timbr/
+git pull
+```
 
 ## Configuration
 
@@ -55,6 +74,6 @@ You can override these with your own CSS in your theme or a custom plugin.
 
 Found a bug? Anything you'd like to ask, add, change, or have added or changed? Please open an issue so we can talk about it.
 
-## License
+## Author
 
-[MIT](/LICENSE) &copy; [Tim Brugman](https://timbr.dev/)
+[Tim Brugman](https://github.com/Brugman)

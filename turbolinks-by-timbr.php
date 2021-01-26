@@ -15,7 +15,7 @@ register_activation_hook( __FILE__, function () {
     $settings_default = plugin_dir_path( __FILE__ ).'assets/turbolinks-settings.default.js';
     $settings         = plugin_dir_path( __FILE__ ).'assets/turbolinks-settings.js';
 
-    if ( !file_exists( $settings_custom ) )
+    if ( !file_exists( $settings ) )
         copy( $settings_default, $settings );
 });
 
